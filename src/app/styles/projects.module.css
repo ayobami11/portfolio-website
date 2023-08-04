@@ -1,0 +1,56 @@
+.projectsSection {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.projects {
+    display: grid;
+    gap: 1em;
+}
+
+.project {
+    cursor: pointer;
+    color: var(--charcoal);
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+.folderIcon {
+    color: var(--peach);
+    font-size: 2.5rem;
+}
+
+.links {
+}
+
+.title {
+    color: rgb(204, 214, 246);
+}
+
+.tools {
+    color: #8892b0;
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+@media (min-width: 481px) {
+    .projects {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+:global(.darkMode) .project {
+    background: rgb(17, 34, 64);
+    color: rgb(168, 178, 209);
+}
+
+:global(.darkMode) .project:hover h3 {
+    color: var(--light-green);
+}
+
+:global(.darkMode) .folderIcon {
+    color: var(--light-green);
+}
+

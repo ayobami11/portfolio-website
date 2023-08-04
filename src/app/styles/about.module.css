@@ -1,0 +1,13 @@
+.aboutSection h1 {
+    color: var(--grayish-blue);
+    font-size: clamp(2.25rem, 4vw, 4rem);
+}
+
+:global(.darkMode) .aboutSection h1 {
+    color: var(--slate);
+}
+
+/* high specificity is required to override the initial value  */
+:global(.darkMode) .aboutSection.aboutSection h2 {
+    color: var(--light-gray);
+}

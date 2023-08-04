@@ -1,7 +1,8 @@
-import { AppState, AppAction } from "../types/app";
+import { AppState, AppAction } from "@/app/types/app";
 
 export const initialState: AppState = {
-    isMenuOpen: false
+    isMenuOpen: false,
+    isDarkMode: false
 }
 
 export const reducer = (state: AppState, action: AppAction) => {
@@ -17,6 +18,20 @@ export const reducer = (state: AppState, action: AppAction) => {
             return {
                 ...state,
                 isMenuOpen: false
+            }
+        }
+
+        case 'SET_MODE': {
+            return {
+                ...state,
+                isDarkMode: action.payload.isDarkMode
+            }
+        }
+
+        case 'TOGGLE_MODE': {
+            return {
+                ...state,
+                isDarkMode: !state.isDarkMode
             }
         }
 

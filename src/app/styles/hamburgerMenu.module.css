@@ -1,0 +1,28 @@
+.menu {
+    position: fixed;
+    background: lightsalmon;
+    top: 0;
+    z-index: 5;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu nav {
+    max-width: 400px;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+@media (min-width: 769px) {
+    .menu {
+        display: none;
+    }
+}

@@ -1,0 +1,17 @@
+.pageWrapper {
+    background: var(--cream);
+    color: var(--charcoal);
+}
+    
+.main {
+    padding: 6em 5% 0;
+}
+
+:global(.darkMode).pageWrapper {
+    background: var(--dark-blue);
+    color: var(--light-gray);
+}
+
+:global(.darkMode).pageWrapper h2 {
+    color: var(--slate);
+}

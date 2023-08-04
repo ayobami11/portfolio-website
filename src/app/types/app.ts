@@ -1,12 +1,17 @@
 import React from 'react';
 
 export interface AppState {
-    isMenuOpen: boolean
+    isMenuOpen: boolean,
+    isDarkMode: boolean
 }
 
-export interface AppAction {
-    type: 'OPEN_MENU' | 'CLOSE_MENU'
-}
+export type AppAction = { type: 'OPEN_MENU' }
+    | { type: 'CLOSE_MENU' }
+    | { type: 'TOGGLE_MODE' }
+    | {
+        type: 'SET_MODE',
+        payload: { isDarkMode: boolean }
+    }
 
 export interface AppContextType {
     state: AppState,
