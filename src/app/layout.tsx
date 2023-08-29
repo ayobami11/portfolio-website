@@ -35,8 +35,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  /* supressHydrationWarning prop is necessary for next-themes library to work properly
+
+    Source: https://github.com/pacocoursey/next-themes#with-app
+  */
+
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang='en' className={`${inter.variable} scroll-smooth`} suppressHydrationWarning>
       <body>
         <AppContextWrapper>
           {children}

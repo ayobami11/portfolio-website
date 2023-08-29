@@ -1,15 +1,13 @@
-import styles from '@/app/styles/about.module.css';
-
 export default function About() {
     return (
-        <section id='about' className={styles.aboutSection}>
+        <section id='about'>
 
             <header>
-                <span></span>
-                <h1>Ayobami Tunwase.</h1>
+                <span className='dark:text-light-green'>Hello, I&apos;m</span>
+                <h1 className='text-grayish-blue text-[clamp(2.25rem,4vw,4rem)] dark:text-lightest-slate'>Ayobami Tunwase.</h1>
             </header>
 
-            <h2>Frontend web developer</h2>
+            <h2 className='text-light-gray dark:text-inherit'>Frontend web developer</h2>
 
             <p>
                 Passionate about creating aesthetically-pleasing and user-friendly website.

@@ -1,9 +1,11 @@
 'use client'
 
-import { createContext, useContext, useReducer } from "react";
+import { createContext, useContext, useReducer } from 'react';
 
-import { reducer, initialState } from "../reducers/app";
-import { AppContextType } from "../types/app";
+import { ThemeProvider } from 'next-themes';
+
+import { reducer, initialState } from '../reducers/app';
+import { AppContextType } from '../types/app';
 
 const AppContext = createContext<AppContextType | null>(null);
 
@@ -12,7 +14,9 @@ export const AppContextWrapper = ({ children }: { children: React.ReactNode }) =
 
     return (
         <AppContext.Provider value={{ state, dispatch }}>
-            {children}
+            <ThemeProvider attribute='class' enableSystem>
+                {children}
+            </ThemeProvider>
         </AppContext.Provider>
     )
 }

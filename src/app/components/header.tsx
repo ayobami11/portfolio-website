@@ -10,31 +10,31 @@ import HamburgerBtn from '@/app/components/HamburgerBtn';
 import HamburgerMenu from '@/app/components/HamburgerMenu';
 import ToggleModeSwitch from '@/app/components/ToggleModeSwitch';
 
-import styles from '@/app/styles/header.module.css';
 
 export default function Header() {
 
     const { state } = useAppContext();
 
     return (
-        <header className={styles.header}>
+        <header className='bg-gray-100/50 dark:bg-gray-900/50 backdrop-blur-sm backdrop-grayscale-[.3] fixed py-6 px-[5%] px top-0 w-full z-20 flex flex-row-reverse justify-between items-center'>
 
-            <nav className={styles.nav}>
-                <ol className={styles.navList}>
-                    <li className={styles.navItem}>
-                        <Link className={styles.navLink} href="/">Home</Link>
+            <nav className='hidden md:flex md:justify-end md:items-center gap-[calc(2.5em+2vw)]'>
+                <ul className='contents'>
+                    <li>
+                        <Link className='text-charcoal hover:text-peach dark:text-slate dark:hover:text-light-green' href="/">Home</Link>
                     </li>
-                    <li className={styles.navItem}>
-                        <Link className={styles.navLink} href="/#experience">Experience</Link>
+                    <li>
+                        <Link className='text-charcoal hover:text-peach dark:text-slate dark:hover:text-light-green' href="/#experience">Experience</Link>
                     </li>
-                    <li className={styles.navItem}>
-                        <Link className={styles.navLink} href="/#work">Work</Link>
+                    <li>
+                        <Link className='text-charcoal hover:text-peach dark:text-slate dark:hover:text-light-green' href="/#work">Work</Link>
                     </li>
-                    <li className={styles.navItem}>
-                        <Link className={styles.navLink} href="/#contact">Contact</Link>
+                    <li>
+                        <Link className='text-charcoal hover:text-peach dark:text-slate dark:hover:text-light-green' href="/#contact">Contact</Link>
                     </li>
-                </ol>
-                <a className={styles.resumeLink} href="" target='_blank' rel='noopener noreferrer' download>Resume</a>
+                </ul>
+                {/* fix transform transition not working properly */}
+                <a className='bg-transparent rounded border-2 border-current text-peach transition duration-300 ease-btn-hover p-2 outline-none hover:-translate-x-1 hover:-translate-y-1 hover:shadow-btn-hover dark:text-light-green' href="" target='_blank' rel='noopener noreferrer' download>Resume</a>
             </nav>
 
             <HamburgerBtn />

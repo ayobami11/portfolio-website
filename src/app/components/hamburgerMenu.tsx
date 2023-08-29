@@ -6,8 +6,6 @@ import { motion } from 'framer-motion';
 
 import { useAppContext } from '@/app/contexts/app';
 
-import styles from '@/app/styles/hamburgerMenu.module.css';
-
 const asideVariants = {
     initial: { height: 0 },
     animate: { height: '100vh' },
@@ -50,17 +48,18 @@ export default function HamburgerMenu() {
 
     return (
         <motion.aside
-            className={styles.menu}
+            className='fixed bg-teal-400 top-0 z-30 w-full flex items-center justify-center text-center md:hidden'
             variants={asideVariants}
             initial='initial'
             animate='animate'
             exit='exit'>
-            <nav>
+            <nav className='max-w-sm'>
                 <motion.ul
                     variants={listVariants}
                     initial='closed'
                     animate='open'
                     exit='closed'
+                    className='flex flex-col gap-8'
                 >
                     <motion.li
                         variants={itemVariants}
