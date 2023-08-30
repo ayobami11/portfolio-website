@@ -13,7 +13,8 @@ module.exports = {
         'btn-hover': 'cubic-bezier(0.645, 0.045, 0.355, 1)'
       },
       fontFamily: {
-        'inter': ['var(--font-inter)'],
+        'primary': ['var(--font-josefin-sans)'],
+        'secondary': ['var(--font-roboto-slab)']
       },
       colors: {
         //  Primary

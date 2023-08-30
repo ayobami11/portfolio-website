@@ -2,9 +2,9 @@ import './globals.css';
 
 import { Metadata } from 'next';
 
-import { Inter } from 'next/font/google';
+import { Josefin_Sans, Roboto_Slab } from 'next/font/google';
 
-import { AppContextWrapper } from './contexts/app';
+import { AppContextWrapper } from '@/contexts/app';
 
 export const metadata: Metadata = {
   title: 'Ayobami Tunwase',
@@ -23,12 +23,21 @@ export const metadata: Metadata = {
   }
 }
 
-const inter = Inter({
-  weight: ['400', '700'],
-  variable: '--font-inter',
+const josefinSans = Josefin_Sans({
+  weight: ['300', '400', '700'],
+  variable: '--font-josefin-sans',
   subsets: ['latin'],
   fallback: ['sans-serif']
 });
+
+
+const robotoSlab = Roboto_Slab({
+  weight: ['400', '600', '700'],
+  variable: '--font-roboto-slab',
+  subsets: ['latin'],
+  fallback: ['sans-serif']
+});
+
 
 export default function RootLayout({
   children,
@@ -41,7 +50,7 @@ export default function RootLayout({
   */
 
   return (
-    <html lang='en' className={`${inter.variable} scroll-smooth`} suppressHydrationWarning>
+    <html lang='en' className={`${josefinSans.variable} ${robotoSlab.variable} scroll-smooth`} suppressHydrationWarning>
       <body>
         <AppContextWrapper>
           {children}

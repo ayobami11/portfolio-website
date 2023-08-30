@@ -4,9 +4,16 @@
 
 @layer base {
 
-  h2,
+  h2 {
+    @apply font-secondary text-2xl md:text-3xl font-semibold text-zinc-600 dark:text-lightest-slate;
+  }
+
   h3 {
-    @apply dark:text-lightest-slate;
+    @apply font-secondary text-xl md:text-2xl font-semibold text-zinc-600 dark:text-lightest-slate;
+  }
+
+  a {
+    @apply transition-colors duration-300 ease-btn-hover;
   }
 
   abbr {

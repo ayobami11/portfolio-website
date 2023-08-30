@@ -1,14 +1,14 @@
 'use client'
 
-import { useAppContext } from '@/app/contexts/app';
+import Link from 'next/link';
 
 import { AnimatePresence } from 'framer-motion';
 
-import Link from 'next/link';
+import { useAppContext } from '@/contexts/app';
 
-import HamburgerBtn from '@/app/components/HamburgerBtn';
-import HamburgerMenu from '@/app/components/HamburgerMenu';
-import ToggleModeSwitch from '@/app/components/ToggleModeSwitch';
+import HamburgerBtn from '@/components/HamburgerBtn';
+import HamburgerMenu from '@/components/HamburgerMenu';
+import ToggleModeSwitch from '@/components/ToggleModeSwitch';
 
 
 export default function Header() {
@@ -16,7 +16,7 @@ export default function Header() {
     const { state } = useAppContext();
 
     return (
-        <header className='bg-gray-100/50 dark:bg-gray-900/50 backdrop-blur-sm backdrop-grayscale-[.3] fixed py-6 px-[5%] px top-0 w-full z-20 flex flex-row-reverse justify-between items-center'>
+        <header className={`font-secondary backdrop-blur-sm fixed py-6 px-[5%] px top-0 w-full z-20 flex flex-row-reverse justify-between items-center`}>
 
             <nav className='hidden md:flex md:justify-end md:items-center gap-[calc(2.5em+2vw)]'>
                 <ul className='contents'>
@@ -34,7 +34,7 @@ export default function Header() {
                     </li>
                 </ul>
                 {/* fix transform transition not working properly */}
-                <a className='bg-transparent rounded border-2 border-current text-peach transition duration-300 ease-btn-hover p-2 outline-none hover:-translate-x-1 hover:-translate-y-1 hover:shadow-btn-hover dark:text-light-green' href="" target='_blank' rel='noopener noreferrer' download>Resume</a>
+                <a className='bg-transparent rounded border-2 border-current text-peach transition py-2 px-3 outline-none hover:-translate-x-1 hover:-translate-y-1 hover:shadow-btn-hover dark:text-light-green' href="" target='_blank' rel='noopener noreferrer' download>Resume</a>
             </nav>
 
             <HamburgerBtn />

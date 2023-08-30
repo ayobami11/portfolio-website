@@ -4,7 +4,7 @@ export default function About() {
 
             <header>
                 <span className='dark:text-light-green'>Hello, I&apos;m</span>
-                <h1 className='text-grayish-blue text-[clamp(2.25rem,4vw,4rem)] dark:text-lightest-slate'>Ayobami Tunwase.</h1>
+                <h1 className='text-grayish-blue text-[clamp(2.25rem,4vw,4rem)] font-bold dark:text-lightest-slate'>Ayobami Tunwase.</h1>
             </header>
 
             <h2 className='text-light-gray dark:text-inherit'>Frontend web developer</h2>

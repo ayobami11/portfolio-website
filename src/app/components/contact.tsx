@@ -16,7 +16,7 @@ export default function Contact() {
                 href="mailto:tunwaseayobami98@gmail.com"
                 target='_blank'
                 rel='noopener noreferrer'
-                className='bg-transparent rounded border-2 border-current text-peach inline-block p-4 transition duration-300 ease-btn-hover outline-none hover:shadow-btn-hover hover:-translate-x-1 hover:-translate-y-1 dark:text-light-green'
+                className='bg-transparent rounded border-2 border-current text-peach inline-block p-4 transition outline-none hover:shadow-btn-hover hover:-translate-x-1 hover:-translate-y-1 dark:text-light-green'
             >Say Hello</a>
 
             <address>

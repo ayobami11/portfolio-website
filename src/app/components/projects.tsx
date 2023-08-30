@@ -5,75 +5,109 @@ import { motion } from 'framer-motion';
 
 import { FiFolder, FiGithub, FiExternalLink } from 'react-icons/fi';
 
-const itemVariants = {
-    hover: { scale: 1.1 }
-}
-
 export default function Projects() {
     return (
         <section id='projects'
-        className='max-w-5xl mx-auto '
-            >
-            <h2>Projects</h2>
+            className='max-w-6xl mx-auto mb-16 w-11/12'
+        >
+            <h2 className='mb-8'>Projects</h2>
 
-            <ul className='grid gap-4'>
-                <motion.li
-                    variants={itemVariants}
-                    whileHover={{ scale: 1.05 }}
-                    className='cursor-pointer text-charcoal p-4 rounded-lg dark:bg-dark-blue dark:text-light-gray'
+            <ul className='grid gap-4 auto-rows-fr md:grid-cols-[repeat(auto-fill,minmax(300px,1fr))]'>
+                <li
+                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-9 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
                 >
-                    <article>
+                    <article className='flex flex-col justify-between h-full'>
                         <header>
-                            <FiFolder className='text-peach text-4xl dark:text-light-green' />
-                            <div>
-                                <a href="https://tweetteer.netlify.app" target='_blank' rel='noopener noreferrer'>
-                                    <FiExternalLink className='dark:text-light-slate' />
-                                </a>
-                                <a href="https://github.com/ayobami11/twitter-frontend" target='_blank' rel='noopener noreferrer' title='Github'>
-                                    <FiGithub className='dark:text-light-slate' />
-                                </a>
+                            <div className='flex gap-4 justify-between items-center mb-6'>
+                                <FiFolder className='text-peach text-4xl dark:text-light-green' />
+                                <div className='flex gap-4 relative z-10'>
+                                    <a
+                                        href="https://tweetteer.netlify.app"
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                        title='Live Site'
+                                    >
+                                        <FiExternalLink className='text-2xl text-zinc-600 hover:text-peach dark:text-light-slate hover:dark:text-light-green transition-colors duration-300 ease-btn-hover' />
+                                    </a>
+                                    <a
+                                        href="https://github.com/ayobami11/twitter-frontend"
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                        title='Github'
+                                    >
+                                        <FiGithub className='text-2xl text-zinc-600 hover:text-peach dark:text-light-slate hover:dark:text-light-green transition-colors duration-300 ease-btn-hover' />
+                                    </a>
+                                </div>
                             </div>
-                            <h3 className='text-gray-300 dark:text-light-green'>Tweetteer</h3>
-                            <p className='dark:text-light-slate'>
-                                A multi-page website showcasing
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto amet magni corporis a unde eum in dignissimos alias enim necessitatibus nulla, tempore atque, iure minus veniam rem. Voluptates, vero id?
+                            <h3 className='mb-4 group-hover:text-peach group-hover:dark:text-light-green'>
+                                <a
+                                    href="https://tweetteer.netlify.app"
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    className='before:absolute before:content-[""] before:inset-0'
+                                >
+                                    Tweetteer
+                                </a>
+                            </h3>
+                            <p className='dark:text-light-slate mb-7'>
+                                A clone of the popular social media platform, X (formerly, Twitter), pre-Elon, built using
+                                the <abbr title='MongoDB Express React Node'>MERN</abbr> stack.
                             </p>
                         </header>
-                        <footer className='dark:text-slate'>
-                            <ul className='flex flex-wrap gap-4'>
+                        <footer className='font-secondary text-sm font-light text-zinc-400 dark:text-slate'>
+                            <ul className='flex flex-wrap gap-x-3 gap-y-1'>
                                 <li>React.js</li>
+                                <li>Express</li>
                                 <li>Material UI</li>
                                 <li>MongoDB</li>
                                 <li>Styled Components</li>
-                                <li>Swiper JS</li>
                             </ul>
                         </footer>
                     </article>
-                </motion.li>
-                <motion.li
-                    variants={itemVariants}
-                    whileHover={{ scale: 1.05 }}
-                    className='cursor-pointer text-charcoal p-4 rounded-lg dark:bg-dark-blue dark:text-light-gray'
+                </li>
+                <li
+                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-9 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
                 >
-                    <article>
+                    <article className='flex flex-col justify-between h-full'>
                         <header>
-                            <FiFolder className='text-peach text-4xl dark:text-light-green' />
-                            <div>
-                                <a href="https://todo-app-ayo.vercel.app" target='_blank' rel='noopener noreferrer'>
-                                    <FiExternalLink className='dark:text-light-slate' />
-                                </a>
-                                <a href="https://github.com/ayobami11/todo" target='_blank' rel='noopener noreferrer' title='Github'>
-                                    <FiGithub className='dark:text-light-slate' />
-                                </a>
+                            <div className='flex gap-4 justify-between items-center mb-6'>
+                                <FiFolder className='text-peach text-4xl dark:text-light-green' />
+                                <div className='flex gap-4 relative z-10'>
+                                    <a
+                                        href="https://todo-app-ayo.vercel.app"
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                        title='Live Site'
+                                    >
+                                        <FiExternalLink className='text-2xl text-zinc-600 hover:text-peach dark:text-light-slate hover:dark:text-light-green transition-colors duration-300 ease-btn-hover' />
+                                    </a>
+                                    <a
+                                        href="https://github.com/ayobami11/todo"
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                        title='Github'
+                                    >
+                                        <FiGithub className='text-2xl text-zinc-600 hover:text-peach dark:text-light-slate hover:dark:text-light-green transition-colors duration-300 ease-btn-hover' />
+                                    </a>
+                                </div>
                             </div>
-                            <h3 className='text-gray-300 dark:text-light-green'>Todo</h3>
-                            <p className='dark:text-light-slate'>
-                                A clone of the popular social media platform, X (formerly, Twitter), pre-Elon.
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto amet magni corporis a unde eum in dignissimos alias enim necessitatibus nulla, tempore atque, iure minus veniam rem. Voluptates, vero id?
+                            <h3 className='mb-4 group-hover:text-peach group-hover:dark:text-light-green'>
+                                <a
+                                    href="https://todo-app-ayo.vercel.app"
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    className='before:absolute before:content-[""] before:inset-0'
+                                >
+                                    Todo
+                                </a>
+                            </h3>
+                            <p className='dark:text-light-slate mb-7'>
+                                A full-stack application which allows users to create and modify tasks.
+                                Users can also filter tasks and select their preferred color theme.
                             </p>
                         </header>
-                        <footer className='dark:text-slate'>
-                            <ul className='flex flex-wrap gap-4'>
+                        <footer className='font-secondary text-sm font-light text-zinc-400 dark:text-slate'>
+                            <ul className='flex flex-wrap gap-x-3 gap-y-1'>
                                 <li>Next.js</li>
                                 <li>Tailwind CSS</li>
                                 <li>MongoDB</li>
@@ -81,115 +115,196 @@ export default function Projects() {
                             </ul>
                         </footer>
                     </article>
-                </motion.li>
-                <motion.li
-                    variants={itemVariants}
-                    whileHover={{ scale: 1.05 }}
-                    className='cursor-pointer text-charcoal p-4 rounded-lg dark:bg-dark-blue dark:text-light-gray'
+                </li>
+                <li
+                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-9 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
                 >
-                    <article>
+                    <article className='flex flex-col justify-between h-full'>
                         <header>
-                            <FiFolder className='text-peach text-4xl dark:text-light-green' />
-                            <div>
-                                <a href="https://space-tourism-ayo.vercel.app" target='_blank' rel='noopener noreferrer'>
-                                    <FiExternalLink className='dark:text-light-slate' />
-                                </a>
-                                <a href="https://github.com/ayobami11/space-tourism" target='_blank' rel='noopener noreferrer' title='Github'>
-                                    <FiGithub className='dark:text-light-slate' />
-                                </a>
+                            <div className='flex gap-4 justify-between items-center mb-6'>
+                                <FiFolder className='text-peach text-4xl dark:text-light-green' />
+                                <div className='flex gap-4 relative z-10'>
+                                    <a
+                                        href="https://space-tourism-ayo.vercel.app"
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                        title='Live Site'
+                                    >
+                                        <FiExternalLink className='text-2xl text-zinc-600 hover:text-peach dark:text-light-slate hover:dark:text-light-green transition-colors duration-300 ease-btn-hover' />
+                                    </a>
+                                    <a
+                                        href="https://github.com/ayobami11/space-tourism"
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                        title='Github'
+                                    >
+                                        <FiGithub className='text-2xl text-zinc-600 hover:text-peach dark:text-light-slate hover:dark:text-light-green transition-colors duration-300 ease-btn-hover' />
+                                    </a>
+                                </div>
                             </div>
-                            <h3 className='text-gray-300 dark:text-light-green'>Space Tourism</h3>
-                            <p className='dark:text-light-slate'>
+                            <h3 className='mb-4 group-hover:text-peach group-hover:dark:text-light-green'>
+                                <a
+                                    href="https://space-tourism-ayo.vercel.app"
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    className='before:absolute before:content-[""] before:inset-0'
+                                >
+                                    Space Tourism
+                                </a>
+                            </h3>
+                            <p className='dark:text-light-slate mb-7'>
                                 A multi-page website showcasing
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto amet magni corporis a unde eum in dignissimos alias enim necessitatibus nulla, tempore atque, iure minus veniam rem. Voluptates, vero id?
                             </p>
                         </header>
-                        <footer className='dark:text-slate'>
-                            <ul className='flex flex-wrap gap-4'>
+                        <footer className='font-secondary text-sm font-light text-zinc-400 dark:text-slate'>
+                            <ul className='flex flex-wrap gap-x-3 gap-y-1'>
                                 <li>Next.js</li>
                                 <li>CSS Modules</li>
                                 <li>Swiper JS</li>
                             </ul>
                         </footer>
                     </article>
-                </motion.li>
-                <motion.li
-                    variants={itemVariants}
-                    whileHover={{ scale: 1.05 }}
-                    className='cursor-pointer text-charcoal p-4 rounded-lg dark:bg-dark-blue dark:text-light-gray'
+                </li>
+                <li
+                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-9 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
                 >
-                    <article>
+                    <article className='flex flex-col justify-between h-full'>
                         <header>
-                            <FiFolder className='text-peach text-4xl dark:text-light-green' />
-                            <div>
-                                <a href="https://rock-paper-scissors-ls.netlify.app/" target='_blank' rel='noopener noreferrer'>
-                                    <FiExternalLink className='dark:text-light-slate' />
-                                </a>
-                                <a href="https://github.com/ayobami11/rock-paper-scissors" target='_blank' rel='noopener noreferrer' title='Github'>
-                                    <FiGithub className='dark:text-light-slate' />
-                                </a>
+                            <div className='flex gap-4 justify-between items-center mb-6'>
+                                <FiFolder className='text-peach text-4xl dark:text-light-green' />
+                                <div className='flex gap-4 relative z-10'>
+                                    <a
+                                        href="https://rock-paper-scissors-ls.netlify.app/"
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                        title='Live Site'
+                                    >
+                                        <FiExternalLink className='text-2xl text-zinc-600 hover:text-peach dark:text-light-slate hover:dark:text-light-green transition-colors duration-300 ease-btn-hover' />
+                                    </a>
+                                    <a
+                                        href="https://github.com/ayobami11/rock-paper-scissors"
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                        title='Github'
+                                    >
+                                        <FiGithub className='text-2xl text-zinc-600 hover:text-peach dark:text-light-slate hover:dark:text-light-green transition-colors duration-300 ease-btn-hover' />
+                                    </a>
+                                </div>
                             </div>
-                            <h3 className='text-gray-300 dark:text-light-green'>Rock, Paper, Scissors</h3>
-                            <p className='dark:text-light-slate'>
+                            <h3 className='mb-4 group-hover:text-peach group-hover:dark:text-light-green'>
+                                <a
+                                    href="https://rock-paper-scissors-ls.netlify.app/"
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    className='before:absolute before:content-[""] before:inset-0'
+                                >
+                                    Rock, Paper, Scissors
+                                </a>
+                            </h3>
+                            <p className='dark:text-light-slate mb-7'>
                                 A web app implementation of the classic Rock, Paper, Scissors game &mdash; with a twist.
                             </p>
                         </header>
-                        <footer className='dark:text-slate'>
-                            <ul className='flex flex-wrap gap-4'>
+                        <footer className='font-secondary text-sm font-light text-zinc-400 dark:text-slate'>
+                            <ul className='flex flex-wrap gap-x-3 gap-y-1'>
                                 <li>React.js</li>
                                 <li>Styled Components</li>
                                 <li>Framer Motion</li>
                             </ul>
                         </footer>
                     </article>
-                </motion.li>
-                <motion.li
-                    variants={itemVariants}
-                    whileHover={{ scale: 1.05 }}
-                    className='cursor-pointer text-charcoal p-4 rounded-lg dark:bg-dark-blue dark:text-light-gray'
+                </li>
+                <li
+                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-9 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
                 >
-                    <article>
+                    <article className='flex flex-col justify-between h-full'>
                         <header>
-                            <FiFolder className='text-peach text-4xl dark:text-light-green' />
-                            <div>
-                                <a href="https://where-in-the-world-react.netlify.app/" target='_blank' rel='noopener noreferrer'>
-                                    <FiExternalLink className='dark:text-light-slate' />
-                                </a>
-                                <a href="https://github.com/ayobami11/countries-app" target='_blank' rel='noopener noreferrer' title='Github'>
-                                    <FiGithub className='dark:text-light-slate' />
-                                </a>
+                            <div className='flex gap-4 justify-between items-center mb-6'>
+                                <FiFolder className='text-peach text-4xl dark:text-light-green' />
+                                <div className='flex gap-4 relative z-10'>
+                                    <a
+                                        href="https://where-in-the-world-react.netlify.app/"
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                        title='Live Site'
+                                    >
+                                        <FiExternalLink className='text-2xl text-zinc-600 hover:text-peach dark:text-light-slate hover:dark:text-light-green transition-colors duration-300 ease-btn-hover' />
+                                    </a>
+                                    <a
+                                        href="https://github.com/ayobami11/countries-app"
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                        title='Github'
+                                    >
+                                        <FiGithub className='text-2xl text-zinc-600 hover:text-peach dark:text-light-slate hover:dark:text-light-green transition-colors duration-300 ease-btn-hover' />
+                                    </a>
+                                </div>
                             </div>
-                            <h3 className='text-gray-300 dark:text-light-green'>Countries App</h3>
-                            <p className='dark:text-light-slate'>A simple web application which allows users to view real-time information about the countries of the world.</p>
+                            <h3 className='mb-4 group-hover:text-peach group-hover:dark:text-light-green'>
+                                <a
+                                    href="https://where-in-the-world-react.netlify.app/"
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    className='before:absolute before:content-[""] before:inset-0'
+                                >
+                                    Countries App
+                                </a>
+                            </h3>
+                            <p className='dark:text-light-slate mb-7'>
+                                A simple web application which allows users to view real-time information about the countries of the world.
+                            </p>
                         </header>
-                        <footer className='dark:text-slate'>
-                            <ul className='flex flex-wrap gap-4'>
+                        <footer className='font-secondary text-sm font-light text-zinc-400 dark:text-slate'>
+                            <ul className='flex flex-wrap gap-x-3 gap-y-1'>
                                 <li>React.js</li>
                                 <li>Styled Components</li>
                             </ul>
                         </footer>
                     </article>
-                </motion.li>
-                <motion.li
-                    variants={itemVariants}
-                    whileHover={{ scale: 1.05 }}
-                    className='cursor-pointer text-charcoal p-4 rounded-lg dark:bg-dark-blue dark:text-light-gray'
+                </li>
+                <li
+                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-9 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
                 >
-                    <article>
+                    <article className='flex flex-col justify-between h-full'>
                         <header>
-                            <FiFolder className='text-peach text-4xl dark:text-light-green' />
-                            <div>
-                                <a href="https://ayobami11.github.io/30DaysOfCode/day-17/" target='_blank' rel='noopener noreferrer'>
-                                    <FiExternalLink className='dark:text-light-slate' />
-                                </a>
-                                <a href="https://github.com/ayobami11/30DaysOfCode/tree/main/day-17" target='_blank' rel='noopener noreferrer' title='Github'>
-                                    <FiGithub className='dark:text-light-slate' />
-                                </a>
+                            <div className='flex gap-4 justify-between items-center mb-6'>
+                                <FiFolder className='text-peach text-4xl dark:text-light-green' />
+                                <div className='flex gap-4 relative z-10'>
+                                    <a
+                                        href="https://ayobami11.github.io/30DaysOfCode/day-17/"
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                        title='Live Site'
+                                    >
+                                        <FiExternalLink className='text-2xl text-zinc-600 hover:text-peach dark:text-light-slate hover:dark:text-light-green transition-colors duration-300 ease-btn-hover' />
+                                    </a>
+                                    <a
+                                        href="https://github.com/ayobami11/30DaysOfCode/tree/main/day-17"
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                        title='Github'
+                                    >
+                                        <FiGithub className='text-2xl text-zinc-600 hover:text-peach dark:text-light-slate hover:dark:text-light-green transition-colors duration-300 ease-btn-hover' />
+                                    </a>
+                                </div>
                             </div>
-                            <h3 className='text-gray-300 dark:text-light-green'>Advice Generator App</h3>
+                            <h3 className='mb-4 group-hover:text-peach group-hover:dark:text-light-green'>
+                                <a
+                                    href="https://ayobami11.github.io/30DaysOfCode/day-17/"
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    className='before:absolute before:content-[""] before:inset-0'
+                                >
+                                    Advice Generator App
+                                </a>
+                            </h3>
+                            <p className='dark:text-light-slate mb-7'>
+                                A single-page website that autogenerates random advice with the Advice
+                                Slip <abbr title='Application Programming Interface'>API</abbr>.
+                            </p>
                         </header>
-                        <footer className='dark:text-slate'>
-                            <ul className='flex flex-wrap gap-4'>
+                        <footer className='font-secondary text-sm font-light text-zinc-400 dark:text-slate'>
+                            <ul className='flex flex-wrap gap-x-3 gap-y-1'>
                                 <li>
                                     <abbr title="Hyper Text Markup Language">HTML</abbr>
                                 </li>
@@ -200,42 +315,105 @@ export default function Projects() {
                             </ul>
                         </footer>
                     </article>
-                </motion.li>
-                <motion.li>
-                    <article>
+                </li>
+                <li
+                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-9 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
+                >
+                    <article className='flex flex-col justify-between h-full'>
                         <header>
-                            <FiFolder className='text-peach text-4xl dark:text-light-green' />
-                            <div>
-                                <a href="https://url-shrtener.netlify.app" target='_blank' rel='noopener noreferrer'>
-                                    <FiExternalLink className='dark:text-light-slate' />
-                                </a>
-                                <a href="https://github.com/ayobami11/url-shortener" target='_blank' rel='noopener noreferrer' title='Github'>
-                                    <FiGithub className='dark:text-light-slate' />
-                                </a>
+                            <div className='flex gap-4 justify-between items-center mb-6'>
+                                <FiFolder className='text-peach text-4xl dark:text-light-green' />
+                                <div className='flex gap-4 relative z-10'>
+                                    <a
+                                        href="https://url-shrtener.netlify.app"
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                        title='Live Site'
+                                    >
+                                        <FiExternalLink className='text-2xl text-zinc-600 hover:text-peach dark:text-light-slate hover:dark:text-light-green transition-colors duration-300 ease-btn-hover' />
+                                    </a>
+                                    <a
+                                        href="https://github.com/ayobami11/url-shortener"
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                        title='Github'
+                                    >
+                                        <FiGithub className='text-2xl text-zinc-600 hover:text-peach dark:text-light-slate hover:dark:text-light-green transition-colors duration-300 ease-btn-hover' />
+                                    </a>
+                                </div>
                             </div>
-                            <h3>
-                                <abbr title='Uniform Resource Locator'>URL</abbr> Shortener
+                            <h3 className='mb-4 group-hover:text-peach group-hover:dark:text-light-green'>
+                                <a
+                                    href="https://url-shrtener.netlify.app"
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    className='before:absolute before:content-[""] before:inset-0'
+                                >
+                                    <abbr title='Uniform Resource Locator'>URL</abbr> Shortener
+                                </a>
                             </h3>
+                            <p className='dark:text-light-slate mb-7'>
+                                Online tool that accepts long website <abbr title='Uniform Resource Locator'>URL</abbr>s
+                                and generates shortened links that are shareable and easy to remember.
+                            </p>
                         </header>
+                        <footer className='font-secondary text-sm font-light text-zinc-400 dark:text-slate'>
+                            <ul className='flex flex-wrap gap-x-3 gap-y-1'>
+                                <li>React.js</li>
+                                <li>Styled Components</li>
+                                <li>Shortly <abbr title='Application Programming Interface'>API</abbr></li>
+                            </ul>
+                        </footer>
                     </article>
-                </motion.li>
-                <motion.li>
-                    <article>
+                </li>
+                <li
+                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-9 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
+                >
+                    <article className='flex flex-col justify-between h-full'>
                         <header>
-                            <FiFolder className='text-peach text-4xl dark:text-light-green' />
-                            <div>
-                                <a href="https://ayo-calc.netlify.app" target='_blank' rel='noopener noreferrer'>
-                                    <FiExternalLink className='dark:text-light-slate' />
-                                </a>
-                                <a href="https://github.com/ayobami11/calculator" target='_blank' rel='noopener noreferrer' title='Github'>
-                                    <FiGithub className='dark:text-light-slate' />
-                                </a>
+                            <div className='flex gap-4 justify-between items-center mb-6'>
+                                <FiFolder className='text-peach text-4xl dark:text-light-green' />
+                                <div className='flex gap-4 relative z-10'>
+                                    <a
+                                        href="https://ayo-calc.netlify.app"
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                    >
+                                        <FiExternalLink className='text-2xl text-zinc-600 hover:text-peach dark:text-light-slate hover:dark:text-light-green transition-colors duration-300 ease-btn-hover' />
+                                    </a>
+                                    <a
+                                        href="https://github.com/ayobami11/calculator"
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                        title='Github'
+                                    >
+                                        <FiGithub className='text-2xl text-zinc-600 hover:text-peach dark:text-light-slate hover:dark:text-light-green transition-colors duration-300 ease-btn-hover' />
+                                    </a>
+                                </div>
                             </div>
-                            <h3>Simple Calculator</h3>
+                            <h3 className='mb-4 group-hover:text-peach group-hover:dark:text-light-green'>
+                                <a
+                                    href="https://ayo-calc.netlify.app"
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    className='before:absolute before:content-[""] before:inset-0'
+                                >
+                                    Calculator
+                                </a>
+                            </h3>
+                            <p className='dark:text-light-slate mb-7'>
+                                A simple calculator which allows users to perform basic arithmetic operations.
+                            </p>
                         </header>
+                        <footer className='font-secondary text-sm font-light text-zinc-400 dark:text-slate'>
+                            <ul className='flex flex-wrap gap-x-3 gap-y-1'>
+                                <li>React.js</li>
+                                <li>Styled Components</li>
+                            </ul>
+                        </footer>
                     </article>
-                </motion.li>
+                </li>
             </ul>
-        </section>
+        </section >
     )
 }

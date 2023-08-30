@@ -4,8 +4,8 @@ import { createContext, useContext, useReducer } from 'react';
 
 import { ThemeProvider } from 'next-themes';
 
-import { reducer, initialState } from '../reducers/app';
-import { AppContextType } from '../types/app';
+import { reducer, initialState } from '@/reducers/app';
+import { AppContextType } from '@/types/app';
 
 const AppContext = createContext<AppContextType | null>(null);
 

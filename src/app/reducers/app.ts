@@ -1,4 +1,4 @@
-import { AppState, AppAction } from "@/app/types/app";
+import { AppState, AppAction } from "@/types/app";
 
 export const initialState: AppState = {
     isMenuOpen: false,

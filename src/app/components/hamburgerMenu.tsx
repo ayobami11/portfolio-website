@@ -4,7 +4,7 @@ import Link from "next/link"
 
 import { motion } from 'framer-motion';
 
-import { useAppContext } from '@/app/contexts/app';
+import { useAppContext } from '@/contexts/app';
 
 const asideVariants = {
     initial: { height: 0 },
