@@ -1,14 +1,7 @@
 export default function About() {
     return (
-        <section id='about'>
-
-            <header>
-                <span className='dark:text-light-green'>Hello, I&apos;m</span>
-                <h1 className='text-grayish-blue text-[clamp(2.25rem,4vw,4rem)] font-bold dark:text-lightest-slate'>Ayobami Tunwase.</h1>
-            </header>
-
-            <h2 className='text-light-gray dark:text-inherit'>Frontend web developer</h2>
-
+        <section id='about' className='max-w-6xl mx-auto my-16 w-11/12'>
+            <h2 className='mb-8'>About</h2>
             <p>
                 Passionate about creating aesthetically-pleasing and user-friendly website.
                 I specialize in transforming pixel-perfect designs into fully-flegded, responsive web interfaces that are accessible and easy to scale.
@@ -23,7 +16,7 @@ export default function About() {
                 <li>React</li>
                 <li>TypeScript</li>
                 <li>JavaScript</li>
-
+                <li>Tailwind CSS</li>
                 <li>
                     <abbr title="Hyper Text Markup Language">HTML</abbr>
                 </li>

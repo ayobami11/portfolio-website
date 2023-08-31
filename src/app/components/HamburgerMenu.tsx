@@ -77,7 +77,7 @@ export default function HamburgerMenu() {
                         variants={itemVariants}
                         onClick={closeMenu}
                     >
-                        <Link href="/#work">Work</Link>
+                        <Link href="/#projects">Projects</Link>
                     </motion.li>
                     <motion.li
                         variants={itemVariants}

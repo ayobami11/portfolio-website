@@ -2,7 +2,7 @@ import './globals.css';
 
 import { Metadata } from 'next';
 
-import { Josefin_Sans, Roboto_Slab } from 'next/font/google';
+import { Josefin_Sans, Roboto_Slab, Montserrat } from 'next/font/google';
 
 import { AppContextWrapper } from '@/contexts/app';
 
@@ -39,6 +39,14 @@ const robotoSlab = Roboto_Slab({
 });
 
 
+const montserrat = Montserrat({
+  weight: ['300', '400', '700'],
+  variable: '--font-tertiary',
+  subsets: ['latin'],
+  fallback: ['sans-serif']
+});
+
+
 export default function RootLayout({
   children,
 }: {
@@ -50,7 +58,7 @@ export default function RootLayout({
   */
 
   return (
-    <html lang='en' className={`${josefinSans.variable} ${robotoSlab.variable} scroll-smooth`} suppressHydrationWarning>
+    <html lang='en' className={`${josefinSans.variable} ${robotoSlab.variable} ${montserrat.variable} scroll-smooth scroll-pt-32`} suppressHydrationWarning>
       <body>
         <AppContextWrapper>
           {children}

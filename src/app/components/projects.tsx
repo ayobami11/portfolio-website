@@ -1,5 +1,4 @@
 'use client'
-// grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 
 import { motion } from 'framer-motion';
 
@@ -8,13 +7,13 @@ import { FiFolder, FiGithub, FiExternalLink } from 'react-icons/fi';
 export default function Projects() {
     return (
         <section id='projects'
-            className='max-w-6xl mx-auto mb-16 w-11/12'
+            className='max-w-6xl mx-auto mb-24 w-11/12'
         >
             <h2 className='mb-8'>Projects</h2>
 
             <ul className='grid gap-4 auto-rows-fr md:grid-cols-[repeat(auto-fill,minmax(300px,1fr))]'>
                 <li
-                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-9 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
+                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-8 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
                 >
                     <article className='flex flex-col justify-between h-full'>
                         <header>
@@ -54,7 +53,7 @@ export default function Projects() {
                                 the <abbr title='MongoDB Express React Node'>MERN</abbr> stack.
                             </p>
                         </header>
-                        <footer className='font-secondary text-sm font-light text-zinc-400 dark:text-slate'>
+                        <footer className='font-tertiary text-sm font-light text-zinc-400 dark:text-slate'>
                             <ul className='flex flex-wrap gap-x-3 gap-y-1'>
                                 <li>React.js</li>
                                 <li>Express</li>
@@ -66,7 +65,7 @@ export default function Projects() {
                     </article>
                 </li>
                 <li
-                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-9 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
+                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-8 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
                 >
                     <article className='flex flex-col justify-between h-full'>
                         <header>
@@ -106,7 +105,7 @@ export default function Projects() {
                                 Users can also filter tasks and select their preferred color theme.
                             </p>
                         </header>
-                        <footer className='font-secondary text-sm font-light text-zinc-400 dark:text-slate'>
+                        <footer className='font-tertiary text-sm font-light text-zinc-400 dark:text-slate'>
                             <ul className='flex flex-wrap gap-x-3 gap-y-1'>
                                 <li>Next.js</li>
                                 <li>Tailwind CSS</li>
@@ -117,7 +116,7 @@ export default function Projects() {
                     </article>
                 </li>
                 <li
-                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-9 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
+                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-8 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
                 >
                     <article className='flex flex-col justify-between h-full'>
                         <header>
@@ -153,10 +152,10 @@ export default function Projects() {
                                 </a>
                             </h3>
                             <p className='dark:text-light-slate mb-7'>
-                                A multi-page website showcasing
+                                A multi-page website showcasing basic information about a space travel agency.
                             </p>
                         </header>
-                        <footer className='font-secondary text-sm font-light text-zinc-400 dark:text-slate'>
+                        <footer className='font-tertiary text-sm font-light text-zinc-400 dark:text-slate'>
                             <ul className='flex flex-wrap gap-x-3 gap-y-1'>
                                 <li>Next.js</li>
                                 <li>CSS Modules</li>
@@ -166,7 +165,7 @@ export default function Projects() {
                     </article>
                 </li>
                 <li
-                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-9 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
+                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-8 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
                 >
                     <article className='flex flex-col justify-between h-full'>
                         <header>
@@ -205,7 +204,7 @@ export default function Projects() {
                                 A web app implementation of the classic Rock, Paper, Scissors game &mdash; with a twist.
                             </p>
                         </header>
-                        <footer className='font-secondary text-sm font-light text-zinc-400 dark:text-slate'>
+                        <footer className='font-tertiary text-sm font-light text-zinc-400 dark:text-slate'>
                             <ul className='flex flex-wrap gap-x-3 gap-y-1'>
                                 <li>React.js</li>
                                 <li>Styled Components</li>
@@ -215,7 +214,7 @@ export default function Projects() {
                     </article>
                 </li>
                 <li
-                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-9 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
+                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-8 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
                 >
                     <article className='flex flex-col justify-between h-full'>
                         <header>
@@ -251,10 +250,10 @@ export default function Projects() {
                                 </a>
                             </h3>
                             <p className='dark:text-light-slate mb-7'>
-                                A simple web application which allows users to view real-time information about the countries of the world.
+                                A simple web application which displays real-time information about the countries of the world.
                             </p>
                         </header>
-                        <footer className='font-secondary text-sm font-light text-zinc-400 dark:text-slate'>
+                        <footer className='font-tertiary text-sm font-light text-zinc-400 dark:text-slate'>
                             <ul className='flex flex-wrap gap-x-3 gap-y-1'>
                                 <li>React.js</li>
                                 <li>Styled Components</li>
@@ -263,7 +262,7 @@ export default function Projects() {
                     </article>
                 </li>
                 <li
-                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-9 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
+                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-8 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
                 >
                     <article className='flex flex-col justify-between h-full'>
                         <header>
@@ -303,7 +302,7 @@ export default function Projects() {
                                 Slip <abbr title='Application Programming Interface'>API</abbr>.
                             </p>
                         </header>
-                        <footer className='font-secondary text-sm font-light text-zinc-400 dark:text-slate'>
+                        <footer className='font-tertiary text-sm font-light text-zinc-400 dark:text-slate'>
                             <ul className='flex flex-wrap gap-x-3 gap-y-1'>
                                 <li>
                                     <abbr title="Hyper Text Markup Language">HTML</abbr>
@@ -317,7 +316,7 @@ export default function Projects() {
                     </article>
                 </li>
                 <li
-                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-9 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
+                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-8 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
                 >
                     <article className='flex flex-col justify-between h-full'>
                         <header>
@@ -329,7 +328,7 @@ export default function Projects() {
                                         target='_blank'
                                         rel='noopener noreferrer'
                                         title='Live Site'
-                                    >
+                                        >
                                         <FiExternalLink className='text-2xl text-zinc-600 hover:text-peach dark:text-light-slate hover:dark:text-light-green transition-colors duration-300 ease-btn-hover' />
                                     </a>
                                     <a
@@ -357,7 +356,7 @@ export default function Projects() {
                                 and generates shortened links that are shareable and easy to remember.
                             </p>
                         </header>
-                        <footer className='font-secondary text-sm font-light text-zinc-400 dark:text-slate'>
+                        <footer className='font-tertiary text-sm font-light text-zinc-400 dark:text-slate'>
                             <ul className='flex flex-wrap gap-x-3 gap-y-1'>
                                 <li>React.js</li>
                                 <li>Styled Components</li>
@@ -367,7 +366,7 @@ export default function Projects() {
                     </article>
                 </li>
                 <li
-                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-9 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
+                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-8 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
                 >
                     <article className='flex flex-col justify-between h-full'>
                         <header>
@@ -378,6 +377,7 @@ export default function Projects() {
                                         href="https://ayo-calc.netlify.app"
                                         target='_blank'
                                         rel='noopener noreferrer'
+                                        title='Live Site'
                                     >
                                         <FiExternalLink className='text-2xl text-zinc-600 hover:text-peach dark:text-light-slate hover:dark:text-light-green transition-colors duration-300 ease-btn-hover' />
                                     </a>
@@ -402,10 +402,10 @@ export default function Projects() {
                                 </a>
                             </h3>
                             <p className='dark:text-light-slate mb-7'>
-                                A simple calculator which allows users to perform basic arithmetic operations.
+                                A simple calculator that performs basic arithmetic operations.
                             </p>
                         </header>
-                        <footer className='font-secondary text-sm font-light text-zinc-400 dark:text-slate'>
+                        <footer className='font-tertiary text-sm font-light text-zinc-400 dark:text-slate'>
                             <ul className='flex flex-wrap gap-x-3 gap-y-1'>
                                 <li>React.js</li>
                                 <li>Styled Components</li>
