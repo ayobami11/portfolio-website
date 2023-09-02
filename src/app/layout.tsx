@@ -2,7 +2,7 @@ import './globals.css';
 
 import { Metadata } from 'next';
 
-import { Josefin_Sans, Roboto_Slab, Montserrat } from 'next/font/google';
+import { Josefin_Sans, Roboto_Slab, Poppins } from 'next/font/google';
 
 import { AppContextWrapper } from '@/contexts/app';
 
@@ -32,16 +32,16 @@ const josefinSans = Josefin_Sans({
 
 
 const robotoSlab = Roboto_Slab({
-  weight: ['400', '600', '700'],
+  weight: ['400', '500', '600', '700'],
   variable: '--font-roboto-slab',
   subsets: ['latin'],
   fallback: ['sans-serif']
 });
 
 
-const montserrat = Montserrat({
-  weight: ['300', '400', '700'],
-  variable: '--font-tertiary',
+const poppins = Poppins({
+  weight: ['400', '500', '700'],
+  variable: '--font-poppins',
   subsets: ['latin'],
   fallback: ['sans-serif']
 });
@@ -58,7 +58,7 @@ export default function RootLayout({
   */
 
   return (
-    <html lang='en' className={`${josefinSans.variable} ${robotoSlab.variable} ${montserrat.variable} scroll-smooth scroll-pt-32`} suppressHydrationWarning>
+    <html lang='en' className={`${josefinSans.variable} ${robotoSlab.variable} ${poppins.variable} scroll-smooth scroll-pt-32`} suppressHydrationWarning>
       <body>
         <AppContextWrapper>
           {children}

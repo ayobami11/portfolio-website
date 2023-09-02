@@ -13,7 +13,7 @@ html {
   }
 
   h3 {
-    @apply font-secondary text-xl md:text-2xl font-semibold text-zinc-600 dark:text-lightest-slate;
+    @apply font-secondary text-xl md:text-2xl font-medium text-zinc-600 dark:text-lightest-slate;
   }
 
   a {

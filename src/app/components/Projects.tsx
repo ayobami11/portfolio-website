@@ -53,7 +53,7 @@ export default function Projects() {
                                 the <abbr title='MongoDB Express React Node'>MERN</abbr> stack.
                             </p>
                         </header>
-                        <footer className='font-tertiary text-sm font-light text-zinc-400 dark:text-slate'>
+                        <footer className='font-tertiary text-sm text-zinc-400 dark:text-slate'>
                             <ul className='flex flex-wrap gap-x-3 gap-y-1'>
                                 <li>React.js</li>
                                 <li>Express</li>
@@ -105,7 +105,7 @@ export default function Projects() {
                                 Users can also filter tasks and select their preferred color theme.
                             </p>
                         </header>
-                        <footer className='font-tertiary text-sm font-light text-zinc-400 dark:text-slate'>
+                        <footer className='font-tertiary text-sm text-zinc-400 dark:text-slate'>
                             <ul className='flex flex-wrap gap-x-3 gap-y-1'>
                                 <li>Next.js</li>
                                 <li>Tailwind CSS</li>
@@ -155,7 +155,7 @@ export default function Projects() {
                                 A multi-page website showcasing basic information about a space travel agency.
                             </p>
                         </header>
-                        <footer className='font-tertiary text-sm font-light text-zinc-400 dark:text-slate'>
+                        <footer className='font-tertiary text-sm text-zinc-400 dark:text-slate'>
                             <ul className='flex flex-wrap gap-x-3 gap-y-1'>
                                 <li>Next.js</li>
                                 <li>CSS Modules</li>
@@ -204,7 +204,7 @@ export default function Projects() {
                                 A web app implementation of the classic Rock, Paper, Scissors game &mdash; with a twist.
                             </p>
                         </header>
-                        <footer className='font-tertiary text-sm font-light text-zinc-400 dark:text-slate'>
+                        <footer className='font-tertiary text-sm text-zinc-400 dark:text-slate'>
                             <ul className='flex flex-wrap gap-x-3 gap-y-1'>
                                 <li>React.js</li>
                                 <li>Styled Components</li>
@@ -253,7 +253,7 @@ export default function Projects() {
                                 A simple web application which displays real-time information about the countries of the world.
                             </p>
                         </header>
-                        <footer className='font-tertiary text-sm font-light text-zinc-400 dark:text-slate'>
+                        <footer className='font-tertiary text-sm text-zinc-400 dark:text-slate'>
                             <ul className='flex flex-wrap gap-x-3 gap-y-1'>
                                 <li>React.js</li>
                                 <li>Styled Components</li>
@@ -302,7 +302,7 @@ export default function Projects() {
                                 Slip <abbr title='Application Programming Interface'>API</abbr>.
                             </p>
                         </header>
-                        <footer className='font-tertiary text-sm font-light text-zinc-400 dark:text-slate'>
+                        <footer className='font-tertiary text-sm text-zinc-400 dark:text-slate'>
                             <ul className='flex flex-wrap gap-x-3 gap-y-1'>
                                 <li>
                                     <abbr title="Hyper Text Markup Language">HTML</abbr>
@@ -356,7 +356,7 @@ export default function Projects() {
                                 and generates shortened links that are shareable and easy to remember.
                             </p>
                         </header>
-                        <footer className='font-tertiary text-sm font-light text-zinc-400 dark:text-slate'>
+                        <footer className='font-tertiary text-sm text-zinc-400 dark:text-slate'>
                             <ul className='flex flex-wrap gap-x-3 gap-y-1'>
                                 <li>React.js</li>
                                 <li>Styled Components</li>
@@ -405,7 +405,7 @@ export default function Projects() {
                                 A simple calculator that performs basic arithmetic operations.
                             </p>
                         </header>
-                        <footer className='font-tertiary text-sm font-light text-zinc-400 dark:text-slate'>
+                        <footer className='font-tertiary text-sm text-zinc-400 dark:text-slate'>
                             <ul className='flex flex-wrap gap-x-3 gap-y-1'>
                                 <li>React.js</li>
                                 <li>Styled Components</li>

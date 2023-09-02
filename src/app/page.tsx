@@ -9,7 +9,7 @@ export default function Home() {
 
 
   return (
-    <div className='font-primary bg-cream text-charcoal dark:bg-navy dark:text-slate'>
+    <div className='font-tertiary bg-cream text-charcoal dark:bg-navy dark:text-slate'>
       <Header />
       <main className='pt-24'>
         <Hero />

@@ -24,7 +24,7 @@ export default function Header() {
                     target='_blank'
                     rel='noopener noreferrer'
                     className='font-tertiary font-bold text-2xl text-light-navy dark:text-lightest-slate dark:hover:text-light-green transition duration-300 ease-btn-hover'
-                >ayobami11</a>
+                >&lt;ayobami11 /&gt;</a>
 
                 <nav className='hidden md:flex md:justify-end md:items-center gap-[calc(2.5em+2vw)]'>
                     <ul className='contents'>

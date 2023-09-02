@@ -15,7 +15,7 @@ module.exports = {
       fontFamily: {
         'primary': ['var(--font-josefin-sans)'],
         'secondary': ['var(--font-roboto-slab)'],
-        'tertiary': ['var(--font-montserrat)']
+        'tertiary': ['var(--font-poppins)']
       },
       colors: {
         //  Primary
