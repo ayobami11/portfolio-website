@@ -16,14 +16,14 @@ export default function Header() {
     const { state } = useAppContext();
 
     return (
-        <header className='font-secondary backdrop-blur-sm fixed py-6 px-[5%] px top-0 w-full z-20'>
+        <header className='font-tertiary backdrop-blur-sm fixed py-6 px-[5%] px top-0 w-full z-20'>
             <div className='flex justify-between items-center max-w-6xl mx-auto'>
 
                 <a
                     href="https://www.github.com/ayobami11"
                     target='_blank'
                     rel='noopener noreferrer'
-                    className='font-tertiary font-bold text-2xl text-light-navy dark:text-lightest-slate dark:hover:text-light-green transition duration-300 ease-btn-hover'
+                    className='whitespace-nowrap font-bold tracking-wider text-2xl text-light-navy dark:text-lightest-slate dark:hover:text-light-green transition duration-300 ease-btn-hover'
                 >&lt;ayobami11 /&gt;</a>
 
                 <nav className='hidden md:flex md:justify-end md:items-center gap-[calc(2.5em+2vw)]'>
@@ -39,7 +39,7 @@ export default function Header() {
                         </li>
                     </ul>
                     {/* fix transform transition not working properly */}
-                    <a className='bg-transparent rounded border-2 border-current text-peach transition py-2 px-3 outline-none hover:-translate-x-1 hover:-translate-y-1 hover:shadow-btn-hover dark:text-light-green' href="" target='_blank' rel='noopener noreferrer' download>Resume</a>
+                    <a className='bg-transparent rounded border-2 border-current text-peach transition py-2 px-3 outline-none hover:-translate-x-1 hover:-translate-y-1 hover:shadow-btn-hover dark:text-light-green' href='https://drive.google.com/file/d/1R6_5TSq9C1_5GwDSMLYPNl6rXIPL-uy2/view?usp=drive_link' target='_blank' rel='noopener noreferrer' download>Resume</a>
                 </nav>
 
                 <HamburgerBtn />

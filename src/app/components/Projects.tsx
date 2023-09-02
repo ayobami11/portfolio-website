@@ -48,7 +48,7 @@ export default function Projects() {
                                     Tweetteer
                                 </a>
                             </h3>
-                            <p className='dark:text-light-slate mb-7'>
+                            <p className='dark:text-light-slate mb-7 leading-relaxed'>
                                 A clone of the popular social media platform, X (formerly, Twitter), pre-Elon, built using
                                 the <abbr title='MongoDB Express React Node'>MERN</abbr> stack.
                             </p>
@@ -100,7 +100,7 @@ export default function Projects() {
                                     Todo
                                 </a>
                             </h3>
-                            <p className='dark:text-light-slate mb-7'>
+                            <p className='dark:text-light-slate mb-7 leading-relaxed'>
                                 A full-stack application which allows users to create and modify tasks.
                                 Users can also filter tasks and select their preferred color theme.
                             </p>
@@ -151,7 +151,7 @@ export default function Projects() {
                                     Space Tourism
                                 </a>
                             </h3>
-                            <p className='dark:text-light-slate mb-7'>
+                            <p className='dark:text-light-slate mb-7 leading-relaxed'>
                                 A multi-page website showcasing basic information about a space travel agency.
                             </p>
                         </header>
@@ -200,7 +200,7 @@ export default function Projects() {
                                     Rock, Paper, Scissors
                                 </a>
                             </h3>
-                            <p className='dark:text-light-slate mb-7'>
+                            <p className='dark:text-light-slate mb-7 leading-relaxed'>
                                 A web app implementation of the classic Rock, Paper, Scissors game &mdash; with a twist.
                             </p>
                         </header>
@@ -246,10 +246,10 @@ export default function Projects() {
                                     rel='noopener noreferrer'
                                     className='before:absolute before:content-[""] before:inset-0'
                                 >
-                                    Countries App
+                                    Where In The World?
                                 </a>
                             </h3>
-                            <p className='dark:text-light-slate mb-7'>
+                            <p className='dark:text-light-slate mb-7 leading-relaxed'>
                                 A simple web application which displays real-time information about the countries of the world.
                             </p>
                         </header>
@@ -294,10 +294,10 @@ export default function Projects() {
                                     rel='noopener noreferrer'
                                     className='before:absolute before:content-[""] before:inset-0'
                                 >
-                                    Advice Generator App
+                                    Advice Generator
                                 </a>
                             </h3>
-                            <p className='dark:text-light-slate mb-7'>
+                            <p className='dark:text-light-slate mb-7 leading-relaxed'>
                                 A single-page website that autogenerates random advice with the Advice
                                 Slip <abbr title='Application Programming Interface'>API</abbr>.
                             </p>
@@ -351,7 +351,7 @@ export default function Projects() {
                                     <abbr title='Uniform Resource Locator'>URL</abbr> Shortener
                                 </a>
                             </h3>
-                            <p className='dark:text-light-slate mb-7'>
+                            <p className='dark:text-light-slate mb-7 leading-relaxed'>
                                 Online tool that accepts long website <abbr title='Uniform Resource Locator'>URL</abbr>s
                                 and generates shortened links that are shareable and easy to remember.
                             </p>
@@ -401,7 +401,7 @@ export default function Projects() {
                                     Calculator
                                 </a>
                             </h3>
-                            <p className='dark:text-light-slate mb-7'>
+                            <p className='dark:text-light-slate mb-7 leading-relaxed'>
                                 A simple calculator that performs basic arithmetic operations.
                             </p>
                         </header>
