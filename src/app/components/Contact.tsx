@@ -7,7 +7,7 @@ import { FiGithub, FiTwitter, FiLinkedin } from 'react-icons/fi';
 export default function Contact() {
     return (
         <section id='contact' className='text-center w-10/12 max-w-2xl mx-auto pt-10 pb-20'>
-            <h2 className='mb-8'>Contact</h2>
+            <h2 className='mb-10'>Contact</h2>
 
             <p className='mb-12 text-lg/relaxed'>
                 Let&rsquo;s chat! I&rsquo;m excited to hear from you and discuss potential collaborations.

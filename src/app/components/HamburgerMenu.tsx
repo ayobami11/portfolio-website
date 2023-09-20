@@ -5,6 +5,7 @@ import Link from "next/link"
 import { motion } from 'framer-motion';
 
 import { useAppContext } from '@/contexts/app';
+import ToggleModeSwitch from "@/components/ToggleModeSwitch";
 
 const asideVariants = {
     initial: { height: 0 },
@@ -100,6 +101,8 @@ export default function HamburgerMenu() {
                         </motion.a>
                     </motion.li>
                 </motion.ul>
+
+                <ToggleModeSwitch />
             </nav>
         </motion.aside>
     )

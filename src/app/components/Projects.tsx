@@ -9,7 +9,7 @@ export default function Projects() {
         <section id='projects'
             className='max-w-6xl mx-auto mb-24 w-11/12'
         >
-            <h2 className='mb-8'>Projects</h2>
+            <h2 className='mb-10'>Projects</h2>
 
             <ul className='grid gap-4 auto-rows-fr md:grid-cols-[repeat(auto-fill,minmax(300px,1fr))]'>
                 <li
