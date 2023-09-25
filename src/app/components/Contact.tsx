@@ -1,12 +1,24 @@
-import { FaGithub } from 'react-icons/fa6';
-import { FaTwitter } from 'react-icons/fa6';
-import { FaLinkedin } from 'react-icons/fa6';
+'use client'
+
+import { motion } from 'framer-motion';
 
 import { FiGithub, FiTwitter, FiLinkedin } from 'react-icons/fi';
 
+const sectionVariants = {
+    hidden: { opacity: 0, y: 25 },
+    visible: { opacity: 1, y: 0 },
+}
+
 export default function Contact() {
     return (
-        <section id='contact' className='text-center w-10/12 max-w-2xl mx-auto pt-10 pb-20'>
+        <motion.section
+            id='contact'
+            variants={sectionVariants}
+            initial='hidden'
+            whileInView='visible'
+            transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
+            className='text-center w-10/12 max-w-2xl mx-auto pt-10 pb-20'>
             <h2 className='mb-10'>Contact</h2>
 
             <p className='mb-12 text-lg/relaxed'>
@@ -35,6 +47,6 @@ export default function Contact() {
                     </a>
                 </div>
             </address>
-        </section>
+        </motion.section>
     )
 }

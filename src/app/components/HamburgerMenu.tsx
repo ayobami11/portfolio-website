@@ -49,7 +49,7 @@ export default function HamburgerMenu() {
 
     return (
         <motion.aside
-            className='fixed bg-teal-400 top-0 z-30 w-full flex items-center justify-center text-center md:hidden'
+            className='fixed bg-orange-400 dark:bg-emerald-400 top-0 z-20 w-full flex items-center justify-center text-center md:hidden'
             variants={asideVariants}
             initial='initial'
             animate='animate'
@@ -65,44 +65,50 @@ export default function HamburgerMenu() {
                     <motion.li
                         variants={itemVariants}
                         onClick={closeMenu}
+                        className='dark:text-navy'
                     >
                         <Link href="/">Home</Link>
                     </motion.li>
                     <motion.li
                         variants={itemVariants}
                         onClick={closeMenu}
+                        className='dark:text-navy'
                     >
                         <Link href="/#experience">Experience</Link>
                     </motion.li>
                     <motion.li
                         variants={itemVariants}
                         onClick={closeMenu}
+                        className='dark:text-navy'
                     >
                         <Link href="/#projects">Projects</Link>
                     </motion.li>
                     <motion.li
                         variants={itemVariants}
                         onClick={closeMenu}
+                        className='dark:text-navy'
                     >
                         <Link href="/#contact">Contact</Link>
                     </motion.li>
                     <motion.li
                         variants={itemVariants}
                         onClick={closeMenu}
+                        className='dark:text-navy'
                     >
                         <motion.a
                             variants={itemVariants}
-                            href=""
+                            href='/resume.pdf'
                             target='_blank'
                             rel='noopener noreferrer'
                             download
-                        >
-                            Resume
-                        </motion.a>
+                            className='bg-transparent rounded border-2 border-current dark:text-navy transition py-2 px-3 outline-none hover:-translate-x-1 hover:-translate-y-1 hover:shadow-btn-hover dark:text-light-green' 
+                        >Resume</motion.a>
+                    </motion.li>
+                    <motion.li variants={itemVariants}>
+                        <ToggleModeSwitch />
                     </motion.li>
                 </motion.ul>
 
-                <ToggleModeSwitch />
             </nav>
         </motion.aside>
     )

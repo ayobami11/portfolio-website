@@ -4,18 +4,61 @@ import { motion } from 'framer-motion';
 
 import { FiFolder, FiGithub, FiExternalLink } from 'react-icons/fi';
 
+const sectionVariants = {
+    hidden: { opacity: 0, y: 25 },
+    visible: { opacity: 1, y: 0 },
+}
+
+const listVariants = {
+    hidden: {
+        opacity: 0,
+    },
+    visible: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.3,
+        }
+    }
+}
+
+const itemVariants = {
+    hidden: {
+        opacity: 0,
+        y: 10
+    },
+    visible: {
+        opacity: 1,
+        y: 0
+    }
+}
+
 export default function Projects() {
     return (
-        <section id='projects'
+        <motion.section 
+            id='projects'
+            variants={sectionVariants}
+            initial='hidden'
+            whileInView='visible'
+            transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
             className='max-w-6xl mx-auto mb-24 w-11/12'
         >
             <h2 className='mb-10'>Projects</h2>
 
-            <ul className='grid gap-4 auto-rows-fr md:grid-cols-[repeat(auto-fill,minmax(300px,1fr))]'>
-                <li
-                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-8 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
+            <motion.ul
+                variants={listVariants}
+                initial='hidden'
+                whileInView='visible'
+                viewport={{ once: true }}
+                className='grid gap-4 auto-rows-fr md:grid-cols-[repeat(auto-fill,minmax(300px,1fr))]'>
+                <motion.li
+                    variants={itemVariants}
+                    transition={{
+                        ease: [0.645, 0.045, 0.355, 1],
+                        duration: 0.3
+                    }}
                 >
-                    <article className='flex flex-col justify-between h-full'>
+                    <article className='flex flex-col justify-between h-full group relative border-2 border-dotted transition-transform ease-btn-hover duration-300 hover:border-dashed hover:-translate-y-1 border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-8 px-6 rounded dark:bg-dark-blue dark:text-light-gray'>
                         <header>
                             <div className='flex gap-4 justify-between items-center mb-6'>
                                 <FiFolder className='text-peach text-4xl dark:text-light-green' />
@@ -63,11 +106,15 @@ export default function Projects() {
                             </ul>
                         </footer>
                     </article>
-                </li>
-                <li
-                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-8 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
+                </motion.li>
+                <motion.li
+                    variants={itemVariants}
+                    transition={{
+                        ease: [0.645, 0.045, 0.355, 1],
+                        duration: 0.3
+                    }}
                 >
-                    <article className='flex flex-col justify-between h-full'>
+                    <article className='flex flex-col justify-between h-full group relative border-2 border-dotted transition-transform ease-btn-hover duration-300 hover:border-dashed hover:-translate-y-1 border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-8 px-6 rounded dark:bg-dark-blue dark:text-light-gray'>
                         <header>
                             <div className='flex gap-4 justify-between items-center mb-6'>
                                 <FiFolder className='text-peach text-4xl dark:text-light-green' />
@@ -114,11 +161,15 @@ export default function Projects() {
                             </ul>
                         </footer>
                     </article>
-                </li>
-                <li
-                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-8 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
+                </motion.li>
+                <motion.li
+                    variants={itemVariants}
+                    transition={{
+                        ease: [0.645, 0.045, 0.355, 1],
+                        duration: 0.3
+                    }}
                 >
-                    <article className='flex flex-col justify-between h-full'>
+                    <article className='flex flex-col justify-between h-full group relative border-2 border-dotted transition-transform ease-btn-hover duration-300 hover:border-dashed hover:-translate-y-1 border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-8 px-6 rounded dark:bg-dark-blue dark:text-light-gray'>
                         <header>
                             <div className='flex gap-4 justify-between items-center mb-6'>
                                 <FiFolder className='text-peach text-4xl dark:text-light-green' />
@@ -163,11 +214,15 @@ export default function Projects() {
                             </ul>
                         </footer>
                     </article>
-                </li>
-                <li
-                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-8 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
+                </motion.li>
+                <motion.li
+                    variants={itemVariants}
+                    transition={{
+                        ease: [0.645, 0.045, 0.355, 1],
+                        duration: 0.3
+                    }}
                 >
-                    <article className='flex flex-col justify-between h-full'>
+                    <article className='flex flex-col justify-between h-full group relative border-2 border-dotted transition-transform ease-btn-hover duration-300 hover:border-dashed hover:-translate-y-1 border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-8 px-6 rounded dark:bg-dark-blue dark:text-light-gray'>
                         <header>
                             <div className='flex gap-4 justify-between items-center mb-6'>
                                 <FiFolder className='text-peach text-4xl dark:text-light-green' />
@@ -212,11 +267,15 @@ export default function Projects() {
                             </ul>
                         </footer>
                     </article>
-                </li>
-                <li
-                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-8 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
+                </motion.li>
+                <motion.li
+                    variants={itemVariants}
+                    transition={{
+                        ease: [0.645, 0.045, 0.355, 1],
+                        duration: 0.3
+                    }}
                 >
-                    <article className='flex flex-col justify-between h-full'>
+                    <article className='flex flex-col justify-between h-full group relative border-2 border-dotted transition-transform ease-btn-hover duration-300 hover:border-dashed hover:-translate-y-1 border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-8 px-6 rounded dark:bg-dark-blue dark:text-light-gray'>
                         <header>
                             <div className='flex gap-4 justify-between items-center mb-6'>
                                 <FiFolder className='text-peach text-4xl dark:text-light-green' />
@@ -260,11 +319,15 @@ export default function Projects() {
                             </ul>
                         </footer>
                     </article>
-                </li>
-                <li
-                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-8 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
+                </motion.li>
+                <motion.li
+                    variants={itemVariants}
+                    transition={{
+                        ease: [0.645, 0.045, 0.355, 1],
+                        duration: 0.3
+                    }}
                 >
-                    <article className='flex flex-col justify-between h-full'>
+                    <article className='flex flex-col justify-between h-full group relative border-2 border-dotted transition-transform ease-btn-hover duration-300 hover:border-dashed hover:-translate-y-1 border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-8 px-6 rounded dark:bg-dark-blue dark:text-light-gray'>
                         <header>
                             <div className='flex gap-4 justify-between items-center mb-6'>
                                 <FiFolder className='text-peach text-4xl dark:text-light-green' />
@@ -314,11 +377,15 @@ export default function Projects() {
                             </ul>
                         </footer>
                     </article>
-                </li>
-                <li
-                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-8 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
+                </motion.li>
+                <motion.li
+                    variants={itemVariants}
+                    transition={{
+                        ease: [0.645, 0.045, 0.355, 1],
+                        duration: 0.3
+                    }}
                 >
-                    <article className='flex flex-col justify-between h-full'>
+                    <article className='flex flex-col justify-between h-full group relative border-2 border-dotted transition-transform ease-btn-hover duration-300 hover:border-dashed hover:-translate-y-1 border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-8 px-6 rounded dark:bg-dark-blue dark:text-light-gray'>
                         <header>
                             <div className='flex gap-4 justify-between items-center mb-6'>
                                 <FiFolder className='text-peach text-4xl dark:text-light-green' />
@@ -328,7 +395,7 @@ export default function Projects() {
                                         target='_blank'
                                         rel='noopener noreferrer'
                                         title='Live Site'
-                                        >
+                                    >
                                         <FiExternalLink className='text-2xl text-zinc-600 hover:text-peach dark:text-light-slate hover:dark:text-light-green transition-colors duration-300 ease-btn-hover' />
                                     </a>
                                     <a
@@ -364,11 +431,15 @@ export default function Projects() {
                             </ul>
                         </footer>
                     </article>
-                </li>
-                <li
-                    className='group relative border-2 border-dotted hover:border-dashed border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-8 px-6 rounded dark:bg-dark-blue dark:text-light-gray transition duration-300 ease-btn-hover hover:-translate-y-1'
+                </motion.li>
+                <motion.li
+                    variants={itemVariants}
+                    transition={{
+                        ease: [0.645, 0.045, 0.355, 1],
+                        duration: 0.3
+                    }}
                 >
-                    <article className='flex flex-col justify-between h-full'>
+                    <article className='flex flex-col justify-between h-full group relative border-2 border-dotted transition-transform ease-btn-hover duration-300 hover:border-dashed hover:-translate-y-1 border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-8 px-6 rounded dark:bg-dark-blue dark:text-light-gray'>
                         <header>
                             <div className='flex gap-4 justify-between items-center mb-6'>
                                 <FiFolder className='text-peach text-4xl dark:text-light-green' />
@@ -412,8 +483,8 @@ export default function Projects() {
                             </ul>
                         </footer>
                     </article>
-                </li>
-            </ul>
-        </section >
+                </motion.li>
+            </motion.ul>
+        </motion.section >
     )
 }
