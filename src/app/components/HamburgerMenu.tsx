@@ -49,7 +49,7 @@ export default function HamburgerMenu() {
 
     return (
         <motion.aside
-            className='fixed bg-orange-400 dark:bg-emerald-400 top-0 z-20 w-full flex items-center justify-center text-center md:hidden'
+            className='fixed bg-orange-400 dark:bg-emerald-400 top-0 z-20 w-full h-screen flex items-center justify-center text-center md:hidden'
             variants={asideVariants}
             initial='initial'
             animate='animate'
@@ -97,11 +97,11 @@ export default function HamburgerMenu() {
                     >
                         <motion.a
                             variants={itemVariants}
-                            href='/resume.pdf'
+                            href="/Ayobami's Resume.pdf"
                             target='_blank'
                             rel='noopener noreferrer'
                             download
-                            className='bg-transparent rounded border-2 border-current dark:text-navy transition py-2 px-3 outline-none hover:-translate-x-1 hover:-translate-y-1 hover:shadow-btn-hover dark:text-light-green' 
+                            className='bg-transparent rounded border-2 border-current dark:text-navy transition py-2 px-3 outline-none hover:-translate-x-1 hover:-translate-y-1 hover:shadow-btn-hover'
                         >Resume</motion.a>
                     </motion.li>
                     <motion.li variants={itemVariants}>

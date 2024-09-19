@@ -37,7 +37,7 @@ export default function Header() {
                             </li>
                         </ul>
                         <a
-                            href='/resume.pdf'
+                            href="/Ayobami's Resume.pdf"
                             target='_blank'
                             rel='noopener noreferrer'
                             download
