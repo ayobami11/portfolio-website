@@ -228,6 +228,59 @@ export default function Projects() {
                                 <FiFolder className='text-peach text-4xl dark:text-light-green' />
                                 <div className='flex gap-4 relative z-10'>
                                     <a
+                                        href="https://compress-ipv6-address.vercel.app"
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                        title='Live Site'
+                                    >
+                                        <FiExternalLink className='text-2xl text-zinc-600 hover:text-peach dark:text-light-slate hover:dark:text-light-green transition-colors duration-300 ease-btn-hover' />
+                                    </a>
+                                    <a
+                                        href="https://github.com/ayobami11/compress-ipv6-address"
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                        title='Github'
+                                    >
+                                        <FiGithub className='text-2xl text-zinc-600 hover:text-peach dark:text-light-slate hover:dark:text-light-green transition-colors duration-300 ease-btn-hover' />
+                                    </a>
+                                </div>
+                            </div>
+                            <h3 className='mb-4 group-hover:text-peach group-hover:dark:text-light-green'>
+                                <a
+                                    href="https://space-tourism-ayo.vercel.app"
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    className='before:absolute before:content-[""] before:inset-0'
+                                >
+                                    Compress IPv6 Address
+                                </a>
+                            </h3>
+                            <p className='dark:text-light-slate mb-7 leading-relaxed'>
+                                A tool that converts <abbr title="Internet Protocol version 6">IPv6</abbr> addresses from the preferred format to the compressed format.
+                            </p>
+                        </header>
+                        <footer className='font-tertiary text-sm text-zinc-400 dark:text-slate'>
+                            <ul className='flex flex-wrap gap-x-3 gap-y-1'>
+                                <li>Next.js</li>
+                                <li>Shadcn UI</li>
+                                <li>Tailwind CSS</li>
+                            </ul>
+                        </footer>
+                    </article>
+                </motion.li>
+                <motion.li
+                    variants={itemVariants}
+                    transition={{
+                        ease: [0.645, 0.045, 0.355, 1],
+                        duration: 0.3
+                    }}
+                >
+                    <article className='flex flex-col justify-between h-full group relative border-2 border-dotted transition-transform ease-btn-hover duration-300 hover:border-dashed hover:-translate-y-1 border-peach dark:border-0 dark:shadow-md dark:bg-light-navy cursor-pointer text-charcoal py-8 px-6 rounded dark:bg-dark-blue dark:text-light-gray'>
+                        <header>
+                            <div className='flex gap-4 justify-between items-center mb-6'>
+                                <FiFolder className='text-peach text-4xl dark:text-light-green' />
+                                <div className='flex gap-4 relative z-10'>
+                                    <a
                                         href="https://rock-paper-scissors-ls.netlify.app/"
                                         target='_blank'
                                         rel='noopener noreferrer'
