@@ -247,7 +247,7 @@ export default function Projects() {
                             </div>
                             <h3 className='mb-4 group-hover:text-peach group-hover:dark:text-light-green'>
                                 <a
-                                    href="https://space-tourism-ayo.vercel.app"
+                                    href="https://compress-ipv6-address.vercel.app"
                                     target='_blank'
                                     rel='noopener noreferrer'
                                     className='before:absolute before:content-[""] before:inset-0'
