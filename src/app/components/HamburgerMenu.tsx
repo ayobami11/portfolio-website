@@ -97,7 +97,7 @@ export default function HamburgerMenu() {
                     >
                         <motion.a
                             variants={itemVariants}
-                            href="/Ayobami's Resume.pdf"
+                            href="/Ayobami_Tunwase_Resume.pdf"
                             target='_blank'
                             rel='noopener noreferrer'
                             download
