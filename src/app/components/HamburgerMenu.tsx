@@ -100,7 +100,6 @@ export default function HamburgerMenu() {
                             href="/Ayobami_Tunwase_Resume.pdf"
                             target='_blank'
                             rel='noopener noreferrer'
-                            download
                             className='bg-transparent rounded border-2 border-current dark:text-navy transition py-2 px-3 outline-none hover:-translate-x-1 hover:-translate-y-1 hover:shadow-btn-hover'
                         >Resume</motion.a>
                     </motion.li>
