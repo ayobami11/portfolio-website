@@ -40,6 +40,13 @@ export const metadata: Metadata = {
     creator: '@TunwaseAyobami',
     images: ['/opengraph-image'],
   },
+  icons: {
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' },
+      { url: '/logo.png', type: 'image/png', sizes: '512x512' },
+    ],
+    shortcut: '/logo.png',
+  },
   robots: {
     index: true,
     follow: true,
