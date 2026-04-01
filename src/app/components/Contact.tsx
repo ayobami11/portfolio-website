@@ -1,52 +1,53 @@
 'use client'
 
-import { motion } from 'framer-motion';
+import { motion } from 'framer-motion'
+import { Mail } from 'lucide-react'
+import { buttonVariants } from '@/components/ui/button'
+import { cn } from '@/lib/utils'
 
-import { FiGithub, FiTwitter, FiLinkedin } from 'react-icons/fi';
-
-const sectionVariants = {
-    hidden: { opacity: 0, y: 25 },
-    visible: { opacity: 1, y: 0 },
+const reveal = {
+  hidden: { opacity: 0, y: 24 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+  },
 }
 
 export default function Contact() {
-    return (
-        <motion.section
-            id='contact'
-            variants={sectionVariants}
-            initial='hidden'
-            whileInView='visible'
-            transition={{ ease: 'easeInOut', duration: 0.5, delay: 0.3 }}
-            viewport={{ once: true }}
-            className='text-center w-10/12 max-w-2xl mx-auto pt-10 pb-20'>
-            <h2 className='mb-10'>Contact</h2>
+  return (
+    <motion.section
+      id="contact"
+      variants={reveal}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: '-80px' }}
+      className="text-center max-w-xl mx-auto px-6 sm:px-10 w-full py-24"
+    >
+      <p className="font-mono text-primary text-[11px] uppercase tracking-[0.18em] mb-5">
+        03. What&apos;s next?
+      </p>
 
-            <p className='mb-12 text-lg/relaxed'>
-                Let&rsquo;s chat! I&rsquo;m excited to hear from you and discuss potential collaborations.
-                Don&rsquo;t hesitate to reach out &ndash; I&rsquo;m only one message away.
-            </p>
+      <h2 className="text-4xl md:text-5xl font-bold font-secondary mb-6 leading-tight">
+        Get In Touch
+      </h2>
 
-            <a
-                href="mailto:tunwaseayobami98@gmail.com"
-                target='_blank'
-                rel='noopener noreferrer'
-                className='bg-transparent rounded border-2 border-current text-peach inline-block mb-20 py-3 px-6 transition outline-none hover:shadow-btn-hover hover:-translate-x-1 hover:-translate-y-1 dark:text-light-green'
-            >Say Hello</a>
+      <p className="text-muted-foreground leading-relaxed mb-10 text-[1.0625rem]">
+        I&apos;m currently open to new opportunities. Whether you have a project in
+        mind, a question, or just want to say hello — my inbox is always open.
+      </p>
 
-            <address>
-                <p className='mb-10 text-lg/relaxed'>Feel free to connect with me on the following platforms too:</p>
-                <div className='flex justify-center gap-9'>
-                    <a href="https://github.com/ayobami11" target='_blank' rel='noopener noreferrer' title="Github">
-                        <FiGithub className='text-3xl text-zinc-600 hover:text-peach dark:text-light-slate hover:dark:text-light-green transition-colors duration-300 ease-btn-hover' />
-                    </a>
-                    <a href="https://twitter.com/TunwaseAyobami" target='_blank' rel='noopener noreferrer' title="Twitter">
-                        <FiTwitter className='text-3xl text-zinc-600 hover:text-peach dark:text-light-slate hover:dark:text-light-green transition-colors duration-300 ease-btn-hover' />
-                    </a>
-                    <a href="https://linkedin.com/in/ayobami-tunwase-83a21b202" target='_blank' rel='noopener noreferrer' title="Linkedin">
-                        <FiLinkedin className='text-3xl text-zinc-600 hover:text-peach dark:text-light-slate hover:dark:text-light-green transition-colors duration-300 ease-btn-hover' />
-                    </a>
-                </div>
-            </address>
-        </motion.section>
-    )
+      <a
+        href="mailto:ayobami.tunwase@gmail.com"
+        className={cn(
+          buttonVariants({ size: 'lg' }),
+          'rounded-full px-10 gap-2 shadow-lg shadow-primary/25 hover:shadow-primary/40 mb-16'
+        )}
+      >
+        <Mail className="h-4 w-4" />
+        Say Hello
+      </a>
+
+    </motion.section>
+  )
 }

@@ -1,34 +1,42 @@
 'use client'
 
 import { useTheme } from 'next-themes';
-
 import { motion } from 'framer-motion';
-
-import { FaSun, FaMoon } from 'react-icons/fa6';
+import { Sun, Moon } from 'lucide-react';
 
 const spring = {
-    type: 'spring',
-    stiffness: 700,
-    damping: 30
+  type: 'spring',
+  stiffness: 700,
+  damping: 30,
 }
 
 const ToggleModeSwitch = () => {
+  const { theme, setTheme } = useTheme();
 
-    const { theme, setTheme } = useTheme();
+  const isDark = theme === 'dark';
 
-    const toggleTheme = () => {
-        setTheme(theme === 'dark' ? 'light' : 'dark');
-    }
+  const toggleTheme = () => {
+    setTheme(isDark ? 'light' : 'dark');
+  }
 
-    return (
-        <button onClick={toggleTheme}>
-            <div className={`w-[75px] h-10 relative bg-charcoal flex justify-start items-center rounded-[3.125em] p-2 cursor-pointer overflow-hidden dark:bg-zinc-400 dark:justify-end`} onClick={toggleTheme}>
-                <FaMoon className={`absolute w-4 text-white z-10 opacity-0 translate-x-0 rotate-180 transition-transform dark:opacity-100 dark:-translate-x-11 dark:rotate-0`} />
-                <motion.div className='w-7 h-7 rounded-full bg-cream dark:bg-navy' layout transition={spring} />
-                <FaSun className={`absolute w-4 text-yellow-400 z-10 translate-x-11 rotate-180 transition-transform dark:opacity-0 dark:-translate-x-11`} />
-            </div>
-        </button>
-    );
+  return (
+    <button
+      onClick={toggleTheme}
+      aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
+    >
+      <div
+        className={`w-[60px] h-8 relative bg-secondary border border-border flex items-center rounded-full p-1 cursor-pointer overflow-hidden transition-colors duration-300 ${isDark ? 'justify-end' : 'justify-start'}`}
+      >
+        <Moon className={`absolute left-1.5 w-3.5 h-3.5 text-muted-foreground z-10 transition-all duration-300 ${isDark ? 'opacity-100 scale-100' : 'opacity-0 scale-75'}`} />
+        <motion.div
+          className='w-6 h-6 rounded-full bg-primary shadow-sm z-20'
+          layout
+          transition={spring}
+        />
+        <Sun className={`absolute right-1.5 w-3.5 h-3.5 text-muted-foreground z-10 transition-all duration-300 ${isDark ? 'opacity-0 scale-75' : 'opacity-100 scale-100'}`} />
+      </div>
+    </button>
+  );
 }
 
 export default ToggleModeSwitch;
