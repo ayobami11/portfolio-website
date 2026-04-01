@@ -3,21 +3,93 @@
 @tailwind utilities;
 
 html {
-  scroll-behavior: smooth !important;
+  scroll-behavior: smooth;
 }
 
+section[id] {
+  scroll-margin-top: 100px;
+}
+
+/* ── Shadcn/ui — Zinc base + Indigo primary ─────────────────────── */
+:root {
+  --background: 0 0% 100%;
+  --foreground: 240 10% 3.9%;
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 3.9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 3.9%;
+  --primary: 239 84% 57%;           /* indigo-600  #4f46e5 */
+  --primary-foreground: 0 0% 98%;
+  --secondary: 240 4.8% 95.9%;      /* zinc-100 */
+  --secondary-foreground: 240 5.9% 10%;
+  --muted: 240 4.8% 95.9%;
+  --muted-foreground: 240 3.8% 46.1%; /* zinc-500 */
+  --accent: 239 84% 96%;
+  --accent-foreground: 239 84% 40%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 5.9% 90%;           /* zinc-200 */
+  --input: 240 5.9% 90%;
+  --ring: 239 84% 57%;
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: 240 10% 3.9%;       /* zinc-950  #09090b */
+  --foreground: 0 0% 98%;           /* zinc-50   #fafafa */
+  --card: 240 10% 7%;               /* zinc-900  #18181b */
+  --card-foreground: 0 0% 98%;
+  --popover: 240 10% 7%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 234 89% 74%;           /* indigo-400 #818cf8 */
+  --primary-foreground: 240 10% 3.9%;
+  --secondary: 240 3.7% 15.9%;      /* zinc-800  #27272a */
+  --secondary-foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%; /* zinc-400  #a1a1aa */
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --ring: 234 89% 74%;
+}
+
+/* ── Base styles ─────────────────────────────────────────────────── */
 @layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-primary antialiased;
+    font-size: 1.0625rem;
+    line-height: 1.7;
+  }
+
+  ::selection {
+    @apply bg-primary/20 text-primary;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-secondary text-foreground tracking-tight;
+  }
 
   h2 {
-    @apply font-secondary text-2xl md:text-3xl font-semibold text-zinc-600 dark:text-lightest-slate;
+    @apply text-2xl md:text-3xl font-bold;
   }
 
   h3 {
-    @apply font-secondary text-xl md:text-2xl font-medium text-zinc-600 dark:text-lightest-slate;
+    @apply text-xl md:text-2xl font-semibold;
   }
 
   a {
-    @apply transition-colors duration-300 ease-btn-hover;
+    @apply transition-colors duration-200;
   }
 
   abbr {
@@ -28,9 +100,3 @@ html {
     @apply not-italic;
   }
 }
-
-/* Neutral
---grayish-blue: rgb(78, 93, 115);
-Used in pattern-divider svg files
---dark-grayish-blue: hsl(217, 19%, 24%);
---dark-blue: hsl(218, 23%, 16%); */

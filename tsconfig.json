@@ -24,7 +24,8 @@
       "@/components/*": ["app/components/*"],
       "@/contexts/*": ["app/contexts/*"],
       "@/reducers/*": ["app/reducers/*"],
-      "@/types/*": ["app/types/*"]
+      "@/types/*": ["app/types/*"],
+      "@/lib/*": ["lib/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
