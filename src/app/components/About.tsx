@@ -19,7 +19,7 @@ const skillGroups = [
   },
   {
     label: 'Backend & DB',
-    skills: ['Node.js', 'Firebase', 'MongoDB', 'Python'],
+    skills: ['Node.js', 'PostgreSQL', 'MongoDB', 'Python'],
   },
   {
     label: 'Tools',
