@@ -1,38 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Ayobami Tunwase — Portfolio Website
 
-## Getting Started
+A personal portfolio website built with Next.js, showcasing my work as a Frontend Web Developer. The site is designed to be fast, accessible, and SEO-optimised, with a clean dark/light theme and smooth interactions.
 
-First, run the development server:
+**Live site:** [ayobami-tunwase.vercel.app](https://ayobami-tunwase.vercel.app)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Responsive design** — fully adapts from mobile to widescreen with a hamburger menu on smaller viewports
+- **Dark / light mode** — persistent theme toggle powered by `next-themes`
+- **Smooth scroll navigation** — internal anchor links scroll smoothly to sections with header offset compensation
+- **Animated UI** — entrance animations and staggered transitions via Framer Motion
+- **Project showcase** — 10 featured projects with tech stack badges, GitHub links, and live demo links
+- **Resume page** — dedicated `/resume` route with a vertical timeline layout (experience, education, skills) and a one-click PDF download
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Tech Stack
 
-## Learn More
+| Category | Technology |
+|---|---|
+| Framework | [Next.js](https://nextjs.org) (App Router) |
+| Language | [TypeScript](https://www.typescriptlang.org) |
+| Styling | [Tailwind CSS](https://tailwindcss.com) |
+| Animations | [Framer Motion](https://www.framer.com/motion) |
+| UI Components | [shadcn/ui](https://ui.shadcn.com) |
+| Theme | [next-themes](https://github.com/pacocoursey/next-themes) |
+| Icons | [react-icons](https://react-icons.github.io/react-icons) |
+| Deployment | [Vercel](https://vercel.com) |
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
