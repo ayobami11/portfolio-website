@@ -13,6 +13,8 @@
 /out/
 next-env.d.ts
 
+README-next.md
+
 # production
 /build
 
