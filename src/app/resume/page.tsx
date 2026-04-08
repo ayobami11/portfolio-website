@@ -213,7 +213,7 @@ export default function ResumePage() {
               ayobami11
             </a>
             <a
-              href="https://linkedin.com/in/ayobami-tunwase-83a21b202"
+              href="https://linkedin.com/in/ayobami-tunwase"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-1.5 hover:text-primary transition-colors"

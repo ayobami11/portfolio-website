@@ -99,7 +99,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               address: { '@type': 'PostalAddress', addressLocality: 'Lagos', addressCountry: 'NG' },
               sameAs: [
                 'https://github.com/ayobami11',
-                'https://linkedin.com/in/ayobami-tunwase-83a21b202',
+                'https://linkedin.com/in/ayobami-tunwase',
                 'https://x.com/TunwaseAyobami',
               ],
               knowsAbout: ['React.js', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Node.js', 'Web Development'],
