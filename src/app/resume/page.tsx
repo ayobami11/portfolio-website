@@ -64,7 +64,7 @@ const education = [
   },
   {
     school: "AltSchool Africa",
-    degree: "Diploma in Cybersecurity",
+    degree: "Diploma in Cybersecurity (First Class)",
     location: "Remote",
     period: "Mar 2025 – Mar 2026",
   },
@@ -396,7 +396,7 @@ export default function ResumePage() {
         {/* Interests */}
         <Section icon={<Code2 className="h-5 w-5" />} title="Interests">
           <div className="flex flex-wrap gap-2">
-            {["Web Development", "Cybersecurity", "Open Source"].map((interest) => (
+            {["Web Development", "Cybersecurity"].map((interest) => (
               <Badge key={interest} variant="secondary">
                 {interest}
               </Badge>

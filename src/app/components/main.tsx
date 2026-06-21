@@ -1,22 +1,20 @@
-'use client'
+"use client";
 
-import { AnimatePresence } from 'framer-motion'
-import { useAppContext } from '@/contexts/app'
+import { AnimatePresence } from "framer-motion";
+import { useAppContext } from "@/contexts/app";
 
-import HamburgerMenu from '@/components/HamburgerMenu'
-import Hero from '@/components/Hero'
-import About from '@/components/About'
-import Projects from '@/components/Projects'
-import Contact from '@/components/Contact'
+import HamburgerMenu from "@/components/hamburger-menu";
+import Hero from "@/components/hero";
+import About from "@/components/about";
+import Projects from "@/components/projects";
+import Contact from "@/components/contact";
 
 export default function Main() {
-  const { state } = useAppContext()
+  const { state } = useAppContext();
 
   return (
     <main>
-      <AnimatePresence>
-        {state.isMenuOpen && <HamburgerMenu />}
-      </AnimatePresence>
+      <AnimatePresence>{state.isMenuOpen && <HamburgerMenu />}</AnimatePresence>
 
       <Hero />
       <About />
@@ -24,7 +22,7 @@ export default function Main() {
       <Contact />
 
       <footer className="text-center py-6 text-xs font-mono text-muted-foreground">
-        Design inspired by{' '}
+        Design inspired by{" "}
         <a
           href="https://brittanychiang.com"
           target="_blank"
@@ -33,8 +31,8 @@ export default function Main() {
         >
           Brittany Chiang
         </a>
-        {' · '}
-        Built by{' '}
+        {" · "}
+        Built by{" "}
         <a
           href="https://github.com/ayobami11"
           target="_blank"
@@ -45,5 +43,5 @@ export default function Main() {
         </a>
       </footer>
     </main>
-  )
+  );
 }

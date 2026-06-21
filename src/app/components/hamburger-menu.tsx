@@ -3,7 +3,7 @@
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { useAppContext } from '@/contexts/app'
-import ToggleModeSwitch from '@/components/ToggleModeSwitch'
+import ToggleModeSwitch from '@/components/toggle-mode-switch'
 
 const asideVariants = {
   initial: { opacity: 0, x: '100%' },

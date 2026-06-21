@@ -1,7 +1,7 @@
-import Header from '@/components/Header'
-import Main from '@/components/Main'
-import SidebarLeft from '@/components/SidebarLeft'
-import SidebarRight from '@/components/SidebarRight'
+import Header from '@/components/header'
+import Main from '@/components/main'
+import SidebarLeft from '@/components/sidebar-left'
+import SidebarRight from '@/components/sidebar-right'
 
 export default function Home() {
   return (

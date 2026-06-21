@@ -5,8 +5,8 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 
 import { useAppContext } from '@/contexts/app'
-import HamburgerBtn from '@/components/HamburgerBtn'
-import ToggleModeSwitch from '@/components/ToggleModeSwitch'
+import HamburgerBtn from '@/components/hamburger-btn'
+import ToggleModeSwitch from '@/components/toggle-mode-switch'
 
 const navLinks = [
   { num: '01', label: 'About', href: '#about' },
