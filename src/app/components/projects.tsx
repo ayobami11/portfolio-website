@@ -23,6 +23,14 @@ const cardReveal = {
 
 const projects = [
   {
+    name: 'FX Checker',
+    description:
+      'A currency converter and FX rate tracker powered by ECB data, featuring live rates, historical charts, multi-currency comparisons, and saved favorites.',
+    stack: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'TanStack Query'],
+    live: 'https://fxcheckerly.vercel.app',
+    github: 'https://github.com/ayobami11/fx-checker',
+  },
+  {
     name: 'Gospel Companion',
     description:
       'An AI-powered digital assistant that enhances the experience of studying bible lessons and gospel materials.',
